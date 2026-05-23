@@ -4,5 +4,6 @@ public class Cliente {
     int idade;
     String cpf;
     double saldoEmLoja;
+    String telefone;
 
 }
