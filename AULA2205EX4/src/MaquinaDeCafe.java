@@ -1,5 +1,5 @@
 public class MaquinaDeCafe {
-    int capsulasDisponiveis;
+    private int capsulasDisponiveis;
 
     public MaquinaDeCafe() {
         this.capsulasDisponiveis = 0;
@@ -7,6 +7,7 @@ public class MaquinaDeCafe {
 
     public void recargar(int quantidade) {
         this.capsulasDisponiveis = this.capsulasDisponiveis + quantidade;
+        System.out.println("Máquina recargada!");
     }
 
     public void fazerCafe() {
@@ -15,8 +16,9 @@ public class MaquinaDeCafe {
             System.out.println("Café pronto!");
 
         } else {
-            System.out.println("Erro Máquina vazia. Recargue");
+            System.out.println("Erro: Máquina vazia. Recarregue!");
         }
 
     }
 }
+/* Método void não retorna só texto */
